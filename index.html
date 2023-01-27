@@ -8,17 +8,22 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <div class="header"></div>
+    <script>
+      function header() {
+        $("").load("./header.html .common-header>*");
+      };
+      // $(function () {
+      //   $("div.header").load("./header.html .common-header>*");
+      // });
+    </script>
+    <div class="header">
+      <script>header()</script>
+    </div>
     <div class="menu" id="menu">
       <span class="menu__line--top"></span>
       <span class="menu__line--middle"></span>
       <span class="menu__line--bottom"></span>
     </div>
-    <script>
-      $(function () {
-        $("div.header").load("./header.html .common-header>*");
-      });
-    </script>
     <script src="js/main.js"></script>
   </body>
 </html>
